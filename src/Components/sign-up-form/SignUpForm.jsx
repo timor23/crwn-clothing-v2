@@ -32,10 +32,6 @@ const SignUpForm = () => {
         console.log(formFields);
     }
 
-    const useless = (a,b) => {
-        if (a>b)
-        return 32
-    }
     return (
         <div>
             <h1>Sign Up with your Email</h1>
