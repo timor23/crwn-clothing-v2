@@ -39,12 +39,7 @@ const SignUpForm = () => {
             alert("passwords don't mach")
             return
         }
-        const { user } = {
-            displayName: displayName,
-            email: email,
-            password: password,
-            confirmPassword: confirmPassword
-        }
+
         try {
             const { user } = await createAuthUserWithEmailAndPassword(email, password)
             await createUserDocumentFromAuth(user, { displayName })
